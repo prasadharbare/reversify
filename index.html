@@ -3,22 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Reversify</title>
-    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Mirror Text</title>
+    <link rel="stylesheet" href="./styles/style.css" />
   </head>
-  <body>
-    <h1 class="heading">Inversify => Reverse Anything</h1>
-    <p class="Description">
-      insert string to inverse,can be used for things like passwords
+  <body class="flex day">
+    <h1 class="heading">reversify • <span class="rev">reverse</span> anything</h1>
+    <p class="description">
+      insert string to <span class="rev1">reverse</span>, can be used for things like <span class="rev2">password</span>
     </p>
-
-    
-    <input type="text" placeholder="Enter Some Text" autofocus />
-    <button class="btn-reverse"></button><img src="<svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-refresh"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M20 11a8.1 8.1 0 0 0 -15.5 -2m-.5 -4v4h4" /><path d="M4 13a8.1 8.1 0 0 0 15.5 2m.5 4v-4h-4" /></svg>
-    <span class="Chip">Copied</span>
+    <div class="aside">
+      <input
+        class="input-text"
+        type="text"
+        placeholder="Enter Text"
+        autofocus
+      />
+      <button class="btn-reverse">
+        <img src="./images/refresh.png" alt="" srcset="" />
+      </button>
+    </div>
+    <span class="chip">copied !</span>
     <span class="theme">
-      <img width="48" height="48" src="https://img.icons8.com/fluency/48/partly-cloudy-day.png" alt="partly-cloudy-day"/>
+      <img src="./images/cloudy-night.png" alt="" />
     </span>
-    <script src="main.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>

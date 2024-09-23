@@ -1,4 +1,100 @@
 @import url("fonts.css");
+@import url("variable.css");
+@import url("utils.css");
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    height: 40px;
+    width: 40px;
+}
+
+body {
+    min-height: 100vh;
+    min-width: 100vw;
+    font-family: var(--mono);
+    background-color: var(--tints);
+    color: var(--shades);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem
+}
+
+input{
+    font-family: inherit;
+    border: 1px solid black;
+    border-radius: 5px;
+}
 
 
 
+.heading {
+    color: var(--accent);
+}
+
+.theme {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    cursor: pointer;
+}
+
+.aside {
+    display: flex;
+    gap: 1rem;
+}
+
+.rev {
+    color: green;
+}
+
+input-text{
+    padding:1 rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+    outline: 1px dashed black;
+    border: none;   
+}
+
+btn-reverse{
+    padding:1rem;
+    font-size: 1rem;
+    border-radius: 5rem;
+
+}
+ .description{
+    font-size: 0.8rem;
+ }
+
+ .heading::after{
+    content: "";
+    background-image: url("/images/reverse.png");
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+    filter: drop-shadow(5px 5px 10px black);
+
+ }
+
+.span{
+    color: var(--accent);
+}
+
+.rev1{
+    color: red;
+}
+.rev2{
+    color: red;
+}
