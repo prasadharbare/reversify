@@ -1,0 +1,29 @@
+:root {
+    --accent: #3469ec;
+    --tints: #eaeaea;
+    --shades: #111;
+    --mono: "Nanum";
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --accent: #3469ec;
+    --tints: #111;
+    --shades: #eaeaea;
+    --mono: "Nanum";
+  }
+} */
+
+.dark-theme {
+    --accent: #3469ec;
+    --tints: #111;
+    --shades: #eaeaea;
+    --mono: "Nanum";
+}
+
+.light-theme {
+    --accent: #3469ec;
+    --tints: #eaeaea;
+    --shades: #111;
+    --mono: "Nanum";
+}

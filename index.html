@@ -1,37 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
-      rel="stylesheet"
-    />
-    <title>Mirror Text</title>
-    <link rel="stylesheet" href="./styles/style.css" />
-  </head>
-  <body class="flex day">
-    <h1 class="heading">reversify • <span class="rev">reverse</span> anything</h1>
-    <p class="description">
-      insert string to <span class="rev1">reverse</span>, can be used for things like <span class="rev2">password</span>
-    </p>
-    <div class="aside">
-      <input
-        class="input-text"
-        type="text"
-        placeholder="Enter Text"
-        autofocus
-      />
-      <button class="btn-reverse">
-        <img src="./images/refresh.png" alt="" srcset="" />
-      </button>
-    </div>
-    <span class="chip">copied !</span>
-    <span class="theme">
-      <img src="./images/cloudy-night.png" alt="" />
-    </span>
-    <script src="./js/main.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>inversify</title>
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+
+<body>
+  <h1 class="heading">
+    inversify • <span class="accent">reverse</span> anything
+  </h1>
+  <p class="description">
+    input text and press on the icon or hit the <kbd>Enter</kbd> key
+  </p>
+
+  <!-- input fields -->
+  <div class="aside">
+    <input class="input-text" type="text" placeholder="enter some text" autofocus data-input-string />
+    <button class="btn-reverse" data-button-copy>
+      <img src="/refresh.svg" alt="reverse icon" />
+    </button>
+  </div>
+
+  <!-- show chip on success -->
+  <span class="chip" data-chip>copied</span>
+
+  <!-- toggle theme -->
+  <span class="theme" title="Toggle Theme" data-toggle-theme>
+    <img src="https://img.icons8.com/fluency/50/partly-cloudy-night.png" alt="theme-change" height="24" />
+  </span>
+
+  <script src="js/main.js" type="module"></script>
+</body>
+
 </html>

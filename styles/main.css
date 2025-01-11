@@ -1,0 +1,102 @@
+@import url("fonts.css");
+@import url("variables.css");
+@import url("utils.css");
+
+/* Resets */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Generic */
+body {
+    font-family: var(--mono), monospace;
+    min-height: 100vh;
+    min-width: 100vw;
+    background: var(--tints);
+    color: var(--shades);
+
+    border: 10px solid #33333312;
+
+    /* Layouts  */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+input,
+button {
+    font-family: inherit;
+}
+
+kbd {
+    color: var(--accent);
+}
+
+.heading {
+    font-weight: bold;
+    font-size: 3rem;
+    text-align: center;
+}
+
+/* .heading::after {
+  content: "";
+  background-image: url("https: //img.icons8.com/emoji/120/repeat-button-emoji.png");
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+} */
+
+.description {
+    font-size: 1rem;
+}
+
+/* Input Fields */
+.aside {
+    display: flex;
+    gap: 1rem;
+}
+
+.input-text {
+    font-size: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: none;
+    outline: 1px dashed black;
+}
+
+.btn-reverse {
+    cursor: pointer;
+    padding: 1rem;
+    border-radius: 50%;
+    border: none;
+    display: grid;
+    place-items: center;
+}
+
+.chip {
+    color: var(--accent);
+    visibility: hidden;
+}
+
+.show {
+    visibility: visible;
+}
+
+/* Theme Icon */
+.theme {
+    cursor: pointer;
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+}
